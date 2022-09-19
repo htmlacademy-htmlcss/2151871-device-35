@@ -1,7 +1,7 @@
 # Личный проект «Девайс»
 
 * Студент: [Игорь Коросткин](https://up.htmlacademy.ru/htmlcss/35/user/2151871).
-* Наставник: `Неизвестно`.
+* Наставник: [Антон Попов] (https://htmlacademy.ru/profile/joker).
 
 ---
 
