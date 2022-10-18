@@ -9,6 +9,7 @@
 
   <body>
     <div class="header-container">
+      <img class="header-bgn" src="./images/header-background.png" width="1160" height="186">
       <header class="page-header">
         <a class="navigation-logo" href="index.html">
           <svg xmlns="http://www.w3.org/2000/svg" width="145" height="36" viewBox="0 0 145 36" fill="none">
@@ -32,39 +33,32 @@
           </svg>
         </a>
 
+      <div class="user-menu-container">
         <div class="search-form">
           <form action="https://echo.htmlacademy.ru/courses" method="get">
             <input class="search" type="search" name="поиск" placeholder="Поиск по сайту" />
-            <button class="button-search" type="submit">Найти</button>
+            <button class="button-search" type="submit"><span>Найти</span></button>
           </form>
         </div>
-        <nav class="user-menu">
-          <a class="header-login" href="#">Войти</a>
-          <div class="user-menu-list">
-            <a class="user-menu-link" href="#">Сравнить</a>
-            <a class="user-menu-link" href="#popover">Корзина</a>
-          </div>
-        </nav>
-
-        <section class="catalog-wrapper">
-          <a class="catalog-link" href="#">Каталог товаров</a>
-          <nav class="nav-menu">
-            <ul>
-              <li><a href="#">Виртуальная реальность</a></li>
-              <li><a href="#">Моноподы для cелфи</a></li>
-              <li><a href="#">Экшн-камеры</a></li>
-              <li><a href="#">Фитнес-браслеты</a></li>
-              <li><a href="#">Умные часы</a></li>
-              <li><a href="#">Квадрокоптеры</a></li>
-            </ul>
+          <nav class="user-menu">
+            <a class="header-login" href="#">Войти</a>
+            <div class="user-menu-list">
+              <a class="compare-button" href="#">Сравнить</a>
+              <a class="cart-button" href="#popover">Корзина</a>
+            </div>
           </nav>
-        </section>
-        <div class="navigation-catalog">
+      </div>
+
+      <section class="catalog-wrapper">
+          <a class="catalog-link" href="#">Каталог товаров</a>
+
+      </section>
+
+      <div class="navigation-catalog">
           <a class="navigation-link" href="#">Доставка</a>
           <a class="navigation-link" href="#">Гарантия</a>
           <a class="navigation-link" href="#">Контакты</a>
-        </div>
-
+      </div>
 
         <!--Открывается корзина-->
         <div class="popover" id="popover" hidden>
@@ -90,9 +84,8 @@
       </header>
     </div>
 
-    <main class="main-iner">
-      <div class="inner-block">
-        <section class="inner-header">
+    <main class="main-container">
+         <section class="inner-header">
           <h1>Моноподы для селфи</h1>
           <ul class="breadcrumbs">
             <li class="breadcrumbs-item">
@@ -106,8 +99,8 @@
             </li>
           </ul>
         </section>
-      </div>
 
+      <div class="container-block">
       <div class="catalog-block">
         <section class="catalog-products">
           <h2 class="visually-hidden">Список товаров с фильтрами</h2>
@@ -186,6 +179,7 @@
               <a class="button-select" href="">вниз</a>
             </div>
           </select>
+        </section>
           <div class="product-block">
           <ul class="product-list">
             <li class="product-card">
@@ -217,12 +211,11 @@
             </li>
           </ul>
 
-
           <a class="button-download" href="">Загрузить ещё</a>
 
           <ul class="pagination">
             <li class="pagination-item">
-              <a class="pagination-link pagination-prev pagination-disabled" href="#">
+              <a class="pagination-button pagination-prev pagination-disabled" href="#">
                 НАЗАД
               </a>
             </li>
@@ -242,13 +235,14 @@
               <a class="pagination-link" href="#">15</a>
             </li>
             <li class="pagination-item">
-              <a class="pagination-link pagination-next" href="#">
+              <a class="pagination-button pagination-next" href="#">
                 ВПЕРЁД
               </a>
             </li>
           </ul>
           </div>
         </section>
+      </div>
       </div>
 
     </main>
@@ -333,7 +327,7 @@
 
       <div class="footer-block3">
         <address class="footer-contacts-address">
-          <a class="contacts-phone-footer" href="tel:+78128121212">+7 (812) 812-12-12</a>
+          <a class="contacts-phone-footer" href="tel:+78128121212">Тел.: +7 (812) 812-12-12</a>
         </address>
         <p class="about-text">
           <a class="htmlacademy-link" href="https://htmlacademy.ru/" target="_blank">
