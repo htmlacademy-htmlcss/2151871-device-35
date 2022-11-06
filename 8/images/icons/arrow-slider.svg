@@ -1,0 +1,15 @@
+<svg width="60" height="420" viewBox="0 0 60 420" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M40 80H36.5L20 50L36.5 20H40L23.8 50L40 80Z" fill="black"/>
+<g opacity="0.6">
+<path d="M40 160H36.5L20 130L36.5 100H40L23.8 130L40 160Z" fill="black"/>
+</g>
+<g opacity="0.3">
+<path d="M40 240H36.5L20 210L36.5 180H40L23.8 210L40 240Z" fill="black"/>
+</g>
+<path d="M40 320H36.5L20 290L36.5 260H40L23.8 290L40 320Z" fill="black"/>
+<rect x="17" y="257" width="26" height="66" stroke="#AF4FFF" stroke-width="2"/>
+<g opacity="0.1">
+<path d="M40 400H36.5L20 370L36.5 340H40L23.8 370L40 400Z" fill="black"/>
+</g>
+<rect x="0.5" y="0.5" width="59" height="419" rx="4.5" stroke="#7B61FF" stroke-dasharray="10 5"/>
+</svg>
