@@ -124,7 +124,7 @@
             <li class="catalog-item">
               <a class="catalog-link-wrap" href="#">
                 <span class="catalog-title">Каталог товаров</span>
-                <span class="catalog-icon"></span>
+                <span class="catalog-icon open"></span>
               </a>
               <ul class="catalog-menu-sort">
                 <li class="catalog-item-wrapper">
@@ -407,36 +407,32 @@
 
       <section class="info-list">
         <h1 class="visually-hidden">Информационный Раздел</h1>
-        <dl class="delivery">
-          <dt class="delivery-title delivery" id="delivery-link">
+        <div class="delivery">
+          <span class="delivery-title delivery" id="delivery-link">
             <a class="button-info-list current-button">Доставка</a>
-          </dt>
-          <dd class="delivery-info">
-            <h2>Доставка</h2>
-            <p>Мы с удовольствием доставим ваш товар прямо <br>
+            <a class="button-info-list ">Гарантия</a>
+            <a class="button-info-list ">Кредит</a>
+          </span>
+          <article class="delivery-info">
+            <h2 class="delivery-info-title">Доставка</h2>
+            <p class="delivery-info-text">Мы с удовольствием доставим ваш товар прямо <br>
               к вашему подъезду совершенно бесплатно! Ведь
               мы неплохо заработаем, поднимая его на ваш этаж.</p>
-          </dd>
-          <dt class="delivery-title warranty" id="warranty-link">
-            <a class="button-info-list">Гарантия</a>
-          </dt>
-          <dd class="warranty-info">
-            <h2>Гарантия</h2>
-            <p>Если из-за возгорания купленного у нас товара у вас
+          </article>
+          <article class="warranty-info">
+            <h2 class="delivery-info-title">Гарантия</h2>
+            <p class="delivery-info-text">Если из-за возгорания купленного у нас товара у вас
               сгорит дом — не переживайте, мы выдадим вам новый.
               Товар, не дом, конечно же.</p>
-          </dd>
-          <dt class="delivery-title credit" id="credit-link">
-            <a class="button-info-list">Кредит</a>
-          </dt>
-          <dd class="credit-info">
-            <h2>Кредит</h2>
-            <p>Залезть в долговую яму стало проще! Кредитные консультанты
+          </article>
+          <article class="credit-info">
+            <h2 class="delivery-info-title">Кредит</h2>
+            <p class="delivery-info-text">Залезть в долговую яму стало проще! Кредитные консультанты
               подберут для вас наиболее выгодные
               условия кредита. Выгодные для банка, разумеется.
             </p>
-          </dd>
-        </dl>
+          </article>
+        </div>
       </section>
 
       <!-- delivery container -->
