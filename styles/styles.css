@@ -1081,7 +1081,7 @@ body {
   bottom: 0;
   width: 7px;
   height: 319px;
-
+  z-index: 1;
 }
 
 .button-info-list {
@@ -1101,6 +1101,8 @@ body {
   letter-spacing: 0.2em;
   text-transform: uppercase;
   text-decoration: none;
+  color: #000000;
+  z-index: 3;
 }
 
 .button-info-list:last-child {
