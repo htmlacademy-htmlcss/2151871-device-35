@@ -163,9 +163,7 @@ body {
   background-repeat: no-repeat;
   background-position: 16px;
   background-size: 16px 17px;
-
 }
-
 
 .button-search {
   position: relative;
@@ -2737,6 +2735,7 @@ body {
   position: relative;
   display: block;
   padding-left: 36px;
+  cursor: pointer;
 }
 
 /* Mark */
@@ -2750,10 +2749,13 @@ body {
   border-radius: 3px;
 }
 
+/* .control-label {
+  border: none;
+} */
 
 
-.control-input[type="checkbox"]:checked + .control-mark::before,
-.control-input[type="checkbox"]:checked + .control-mark::after {
+
+.control-input[type="checkbox"]:checked + .control-mark::before {
   position: absolute;
   top: -2px;
   left: -2px;
@@ -2788,21 +2790,23 @@ body {
   content: "";
 }
 
-.control:hover .control-mark {
-  border-color: #dcdcdc;
+.control:hover  {
+  opacity: 0.6;
 }
 
-.control:active .control-mark {
-  border-color: #ebebeb;
+.control:focus-visible {
+  outline: 2px solid #af4fff;
 }
 
-.control:focus-visible .control-mark {
-  width: 24px;
-  height: 24px;
-  outline: 2px solid #AF4FFf;
+.control:active  {
+  opacity: 0.3;
 }
 
-.control-input:disabled + .control-mark {
+.control:disabled  {
+  opacity: 0.1;
+}
+
+.control-input:disabled  {
   opacity: 0.1;
 }
 
@@ -2934,7 +2938,6 @@ body {
           align-items: baseline;
   width: 60px;
   height: 30px;
-
 }
 
 .button-select-icon {
@@ -2942,8 +2945,6 @@ body {
   color: #000000;
   opacity: 0.2;
 }
-
-
 
 .button-select-icon.up {
   margin: auto;
@@ -2954,7 +2955,6 @@ body {
   -webkit-box-ordinal-group: 2;
       -ms-flex-order: 1;
           order: 1;
-
 }
 
 .button-select-icon.down {
