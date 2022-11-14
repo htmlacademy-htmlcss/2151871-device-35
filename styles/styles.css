@@ -266,7 +266,7 @@ body {
   position: absolute;
   padding: 0;
   margin: 0;
-  width: 56;
+  width: 56px;
   height: 30px;
   right:  0;
   top: 1px;
@@ -631,7 +631,8 @@ body {
   z-index: 1;
 }
 
-.catalog-menu-sort {
+.catalog-menu.sort {
+  position: absolute;
   display: grid;
   grid-template-columns: 222px 170px 190px;
   grid-template-rows: repeat(3, 16px);
@@ -1913,6 +1914,10 @@ body {
   font-weight: 400;
 }
 
+.modal-subtitle.error {
+  color: #FF3D3D;
+}
+
 .form-order-style {
   display: flex;
   width: 760px;
@@ -2162,7 +2167,6 @@ body {
   display: flex;
   flex-direction: column;
   margin: 0 auto;
-  height: ;
   width: 1160px;
   margin-top: 55px;
 }
