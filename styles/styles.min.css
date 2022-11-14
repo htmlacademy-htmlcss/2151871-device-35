@@ -143,17 +143,6 @@ body {
   outline: none;
 }
 
-.search-icon {
-  position: absolute;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  top: 12px;
-  bottom: 12px;
-  left: 16px;
-  z-index: 3;
-}
-
 .search {
   position: relative;
   -webkit-box-align: center;
@@ -170,7 +159,13 @@ body {
   font-style: normal;
   font-weight: 400;
   z-index: 1;
+  background-image: url("../images/icons/icon-search.svg");
+  background-repeat: no-repeat;
+  background-position: 16px;
+  background-size: 16px 17px;
+
 }
+
 
 .button-search {
   position: relative;
@@ -1560,7 +1555,7 @@ body {
 
 .info-titles::before {
   content: "";
-  background: url("..//images/delivery-line.svg");
+  background: url("../images/delivery-line.svg");
   background-repeat: no-repeat;
   position: absolute;
   width: 7px;
