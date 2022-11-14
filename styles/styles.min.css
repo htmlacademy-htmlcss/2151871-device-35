@@ -151,7 +151,7 @@ body {
   top: 12px;
   bottom: 12px;
   left: 16px;
-  z-index: 2;
+  z-index: 3;
 }
 
 .search {
