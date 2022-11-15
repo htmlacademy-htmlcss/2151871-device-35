@@ -839,7 +839,7 @@ body {
   color: #ffffff;
   width: 1062px;
   min-height: 135px;
-  margin: 30px 49px ;
+  margin: 30px 49px;
 }
 
 .slider-info {
@@ -1007,7 +1007,6 @@ body {
   width: 1160px;
   margin: 0 auto;
   margin-top: 47px;
-
 }
 
 .gadgets-list {
@@ -2424,7 +2423,8 @@ body {
   opacity: 0.6;
 }
 
-.control:focus-visible {
+.control-input[type="radio"]:focus-visible + .control-mark,
+.control-input[type="checkbox"]:focus-visible + .control-mark {
   outline: 2px solid #af4fff;
 }
 
