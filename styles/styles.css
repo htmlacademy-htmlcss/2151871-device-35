@@ -2047,6 +2047,7 @@ body {
 .field.number-text::-webkit-inner-spin-button,
 .field.number-text::-webkit-outer-spin-button {
   display: none;
+  -moz-appearance:textfield;
 }
 
 .button-number {
@@ -2056,6 +2057,12 @@ body {
   border: none;
   padding: 0;
   cursor: pointer;
+}
+
+.field.number-text:focus-visible,
+.button-number:focus-visible {
+  z-index: 2;
+  outline: 2px solid #af4fff;
 }
 
 .button-number.minus {
