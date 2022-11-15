@@ -143,17 +143,6 @@ body {
   outline: none;
 }
 
-.search-icon {
-  position: absolute;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  top: 12px;
-  bottom: 12px;
-  left: 16px;
-  z-index: 3;
-}
-
 .search {
   position: relative;
   -webkit-box-align: center;
@@ -170,6 +159,10 @@ body {
   font-style: normal;
   font-weight: 400;
   z-index: 1;
+  background-image: url("../images/icons/icon-search.svg");
+  background-repeat: no-repeat;
+  background-position: 16px;
+  background-size: 16px 17px;
 }
 
 .button-search {
@@ -1560,7 +1553,7 @@ body {
 
 .info-titles::before {
   content: "";
-  background: url("..//images/delivery-line.svg");
+  background: url("../images/delivery-line.svg");
   background-repeat: no-repeat;
   position: absolute;
   width: 7px;
@@ -2450,7 +2443,7 @@ body {
   margin-top: 55px;
 }
 
-.inner-header h1 {
+.catalog-page-title {
   display: block;
   font-size: 50px;
   font-weight: 800;
@@ -2742,6 +2735,7 @@ body {
   position: relative;
   display: block;
   padding-left: 36px;
+  cursor: pointer;
 }
 
 /* Mark */
@@ -2755,10 +2749,13 @@ body {
   border-radius: 3px;
 }
 
+/* .control-label {
+  border: none;
+} */
 
 
-.control-input[type="checkbox"]:checked + .control-mark::before,
-.control-input[type="checkbox"]:checked + .control-mark::after {
+
+.control-input[type="checkbox"]:checked + .control-mark::before {
   position: absolute;
   top: -2px;
   left: -2px;
@@ -2793,21 +2790,23 @@ body {
   content: "";
 }
 
-.control:hover .control-mark {
-  border-color: #dcdcdc;
+.control:hover  {
+  opacity: 0.6;
 }
 
-.control:active .control-mark {
-  border-color: #ebebeb;
+.control:focus-visible {
+  outline: 2px solid #af4fff;
 }
 
-.control:focus-visible .control-mark {
-  width: 24px;
-  height: 24px;
-  outline: 2px solid #AF4FFf;
+.control:active  {
+  opacity: 0.3;
 }
 
-.control-input:disabled + .control-mark {
+.control:disabled  {
+  opacity: 0.1;
+}
+
+.control-input:disabled  {
   opacity: 0.1;
 }
 
@@ -2939,7 +2938,6 @@ body {
           align-items: baseline;
   width: 60px;
   height: 30px;
-
 }
 
 .button-select-icon {
@@ -2947,8 +2945,6 @@ body {
   color: #000000;
   opacity: 0.2;
 }
-
-
 
 .button-select-icon.up {
   margin: auto;
@@ -2959,7 +2955,6 @@ body {
   -webkit-box-ordinal-group: 2;
       -ms-flex-order: 1;
           order: 1;
-
 }
 
 .button-select-icon.down {

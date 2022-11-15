@@ -4,19 +4,17 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Девайс</title>
-    <link rel="stylesheet" href="./styles/styles.min.css">
+    <link rel="stylesheet" href="./styles/styles.css">
     <link rel="icon" href="favicon.ico">
   </head>
 
   <body>
 
     <!-- header container-->
-
     <header class="header-container">
-      <span class="header-background"></span>
-      <div class="page-header">
         <a class="header-logo" href="index.html">
-          <svg xmlns="http://www.w3.org/2000/svg" width="145" height="36" viewBox="0 0 145 36" fill="none">
+          <svg xmlns="http://www.w3.org/2000/svg" width="145" height="36" viewBox="0 0 145 36" fill="none" role="img"
+            aria-label="Девайс.">
             <path
               d="M27.2188 0V35.3H19.6135V32.9C17.9124 34.8 15.5107 36 12.1084 36C5.5038 36 0 30.2 0 22.7C0 15.2 5.5038 9.4 12.1084 9.4C15.5107 9.4 18.0124 10.6 19.6135 12.5V0H27.2188ZM19.6135 22.7C19.6135 18.9 17.1118 16.5 13.6094 16.5C10.107 16.5 7.60524 18.9 7.60524 22.7C7.60524 26.5 10.107 28.9 13.6094 28.9C17.1118 28.8 19.6135 26.5 19.6135 22.7Z"
               fill="black" />
@@ -41,14 +39,8 @@
         <div class="user-menu-container">
           <div class="search-container">
             <form class="search-form" action="https://echo.htmlacademy.ru/courses" method="get">
-              <span class="search-icon">
-                <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path
-                    d="m15.7 15-3.1-3.1c.9-1.2 1.4-2.6 1.4-4.2 0-3.9-3.1-7-7-7s-7 3.1-7 7 3.1 7 7 7c1.6 0 3-.5 4.2-1.4l3.1 3.1c.2.2.4.3.7.3.6 0 1-.4 1-1 0-.2-.1-.5-.3-.7ZM2 7.7c0-2.8 2.2-5 5-5s5 2.2 5 5-2.2 5-5 5-5-2.2-5-5Z"
-                    fill="#000" />
-                </svg>
-              </span>
-              <input class="search" type="search" name="поиск" placeholder="Поиск по сайту">
+              <label class="visually-hidden" for="search">Поиск</label>
+              <input class="search" type="search" name="поиск" id="search" placeholder="Поиск по сайту">
               <button class="button-search" type="submit">Найти</button>
             </form>
           </div>
@@ -56,7 +48,7 @@
             <span class="user-login">
               <a class="button-login" href="#">
                 <svg class="login-icon" aria-hidden="true" focusable="false" width="13" height="12" viewbox="0 0 13 12"
-                  fill="none" xmlns="http://www.w3.org/2000/svg">
+                  fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Логин.">
                   <path
                     d="M0 12h13c-.2-2.6-2.1-4.8-4.7-5.5 1-.6 1.7-1.7 1.7-3C10 1.6 8.4 0 6.5 0S3 1.6 3 3.5c0 1.3.7 2.4 1.7 3C2.1 7.2.2 9.4 0 12Z"
                     fill="currentColor" />
@@ -67,14 +59,14 @@
             <div class="user-menu-list">
               <a class="compare-button" href="#">
                 <svg class="compare-icon" aria-hidden="true" focusable="false" width="10" height="12"
-                  viewBox="0 0 10 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  viewBox="0 0 10 13" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Сравнить.">
                   <path d="M6 .79H4v12h2v-12ZM2 4.79H0v8h2v-8ZM10 3.79H8v9h2v-9Z" fill="currentColor" />
                 </svg>
                 Сравнить
               </a>
               <a class="cart-button" href="#popover">
                 <svg class="cart-icon" aria-hidden="true" focusable="false" width="16" height="14" viewBox="0 0 16 14"
-                  fill="none" xmlns="http://www.w3.org/2000/svg">
+                  fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Корзина.">
                   <path
                     d="m15.3 5.79-3.5.2-3.2-4.9c-.1-.2-.4-.3-.6-.3-.2 0-.5.1-.6.3l-3.2 4.9H.7c-.4 0-.7.3-.7.7v.2l1.9 6.8c.2.7.7 1.1 1.4 1.1h9.4c.7 0 1.2-.4 1.4-1.1l1.9-6.9v-.2c0-.4-.3-.8-.7-.8ZM8 2.69l2.2 3.2H5.9L8 2.69Z"
                     fill="currentColor" />
@@ -84,13 +76,14 @@
               </a>
 
               <!-- popover container-->
-              <div class="popover popover-close">  <!--для открытия менять класс с popover-close на popover-open -->
+              <div class="popover popover-close">
+                <!--для открытия менять класс с popover-close на popover-open -->
                 <span class="popover-background"></span>
                 <ul class="popover-card">
                   <li class="popover-card-list">
                     <a class="popover-cart-item" href="#">
                       <img src="images/catalog/product-1-small.jpg" width="39" height="43"
-                        alt="картинка товара Любительская селфи-палка">
+                        alt="Любительская селфи-палка.">
                       <span class="popover-item-title">Любительская селфи-палка</span>
                     </a>
                     <span class="button-delete"></span>
@@ -98,7 +91,7 @@
                   <li class="popover-card-list">
                     <a class="popover-cart-item" href="#">
                       <img src="images/catalog/product-2-small.jpg" width="39" height="43"
-                        alt="картинка товара Профессиональная селфи-палка">
+                        alt="Профессиональная селфи-палка.">
                       <span class="popover-item-title">Профессиональная селфи-палка</span>
                     </a>
                     <span class="button-delete"></span>
@@ -124,7 +117,8 @@
             <li class="catalog-item">
               <a class="catalog-link-wrap" href="#">
                 <span class="catalog-title">Каталог товаров</span>
-                <span class="catalog-icon"></span> <!--сменя иконки добаить open  catalog-icon open-->
+                <span class="catalog-icon"></span>
+                <!--сменя иконки добаить open  catalog-icon open-->
               </a>
               <ul class="catalog-menu-sort">
                 <!-- подчеркивает активный пункт через класс catalog-link-current-->
@@ -164,32 +158,29 @@
             </ul>
           </div>
         </section>
-      </div>
-    </header>
+      </header>
 
     <main class="main-container">
 
-      <!-- slider container  -->
-      <div class="slider-container">
-        <section class="slide-gadgets-example">
-          <h1 class="visually-hidden">Популярные товары</h1>
+      <section class="slide-gadgets-example">
+          <h1 class="visually-hidden">Популярные товары магазина Девайс</h1>
 
           <!-- slider container 1 -->
-          <div class="slider current-slider">
-            <img class="slider-image" src="images/slider-1.png" width="560" height="560" alt="Примеры товаров">
+          <div class="slider  current-slider">
+            <img class="slider-image" src="images/slider-1.png" width="560" height="560" alt="Квадрокоптер.">
             <p class="slider-number">01</p>
 
             <div class="slider-control">
-              <button class="slider-button slider-next">
+              <button class="slider-button slider-next" type="button">
                 <svg aria-hidden="true" focusable="false" width="20" height="60" viewBox="0 0 20 60" fill="currentColor"
-                  xmlns="http://www.w3.org/2000/svg">
+                  xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Следующий слайд.">
                   <path d="M20 60h-3.5L0 30 16.5 0H20L3.8 30 20 60Z" fill="currentColor" />
                 </svg>
                 <span class="visually-hidden">следующий</span>
               </button>
-              <button class="slider-button slder-previous">
+              <button class="slider-button slder-previous" type="button">
                 <svg aria-hidden="true" focusable="false" width="20" height="60" viewBox="0 0 20 60" fill="currentColor"
-                  xmlns="http://www.w3.org/2000/svg">
+                  xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Предыдущий слайд.">
                   <path d="M20 60h-3.5L0 30 16.5 0H20L3.8 30 20 60Z" fill="currentColor" />
                 </svg>
                 <span class="visually-hidden">предыдущий</span>
@@ -220,8 +211,8 @@
           </div>
 
           <!-- slider container 2 -->
-          <div class="slider current-slider-none">
-            <img class="slider-image" src="images/slider-2.png" width="560" height="560" alt="Примеры товаров">
+          <div class="slider">
+            <img class="slider-image" src="images/slider-2.png" width="560" height="560" alt="Фитнес-браслет.">
             <p class="slider-number">02</p>
             <div class="slider-info">
               <h2 class="silder-heading">Худеем <br>
@@ -242,8 +233,8 @@
           </div>
 
           <!-- slider container 3 -->
-          <div class="slider current-slider-none">
-            <img class="slider-image" src="images/slider-3.png" width="560" height="560" alt="Примеры товаров">
+          <div class="slider" >
+            <img class="slider-image" src="images/slider-3.png" width="560" height="560" alt="Селфи-палка.">
             <p class="slider-number">03</p>
             <div class="slider-info">
               <h2 class="silder-heading">Делай селфи, <br>
@@ -278,7 +269,7 @@
             <li class="slider-pagination-item">
               <button class="slider-pagination-button slider-pagination-button-current" type="button">
                 <svg aria-hidden="true" focusable="false" width="12" height="12" viewBox="0 0 12 12" fill="none"
-                  xmlns="http://www.w3.org/2000/svg">
+                  xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Квадрокоптер.">
                   <circle cx="6" cy="6" r="5" fill="currentColor" stroke="#000" stroke-width="2" />
                 </svg>
                 <span class="visually-hidden">Квадрокоптер</span>
@@ -287,7 +278,7 @@
             <li class="slider-pagination-item">
               <button class="slider-pagination-button" type="button">
                 <svg aria-hidden="true" focusable="false" width="12" height="12" viewBox="0 0 12 12" fill="none"
-                  xmlns="http://www.w3.org/2000/svg">
+                  xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Фитнес браслет.">
                   <circle cx="6" cy="6" r="5" fill="currentColor" stroke="#000" stroke-width="2" />
                 </svg>
                 <span class="visually-hidden">Фитнес-браслет</span>
@@ -296,7 +287,7 @@
             <li class="slider-pagination-item">
               <button class="slider-pagination-button" type="button">
                 <svg aria-hidden="true" focusable="false" width="12" height="12" viewBox="0 0 12 12" fill="none"
-                  xmlns="http://www.w3.org/2000/svg">
+                  xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Селфи палка.">
                   <circle cx="6" cy="6" r="5" fill="currentColor" stroke="#000" stroke-width="2" />
                 </svg>
                 <span class="visually-hidden">Селфи Палка</span>
@@ -304,18 +295,17 @@
             </li>
           </ol>
         </section>
-      </div>
 
       <!-- gadgets container -->
 
       <section class="gadgets">
-        <h1 class="visually-hidden" hidden>Раздел товаров</h1>
+        <h2 class="visually-hidden">Разделы товаров</h2>
         <ul class="gadgets-list">
           <li class="gadgets-item">
             <a class="gadgets-link" href="#">
               <div class="gadgets-icon">
                 <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="97" height="55"
-                  fill="none">
+                  fill="none" role="img" aria-label="Виртуальная реальность.">
                   <path
                     d="M84.13 32.64V20c0-1.3 1.05-2.37 2.34-2.37l8.32 1.58v-8.19c0-2.36-1.7-3.43-4.2-4.27L67.4.17c1.62 1.4 1.9 2.04 1.9 4.4v45.21c0 2.36-.46 4.07-1.97 5.21l23.26-7.07c2.4-.83 4.2-4.21 4.2-6.57v-7.91l-8.32 1.57a2.35 2.35 0 0 1-2.34-2.37Z"
                     fill="#363636" />
@@ -332,7 +322,7 @@
             <a class="gadgets-link" href="catalog.html">
               <div class="gadgets-icon self">
                 <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="87" height="117"
-                  fill="none">
+                  fill="none" role="img" aria-label="Моноподы для селфи.">
                   <path
                     d="M82.82 4.01H3.33A3.19 3.19 0 0 0 .14 7.2V53.6a3.19 3.19 0 0 0 3.19 3.2h79.5A3.19 3.19 0 0 0 86 53.6V7.2A3.19 3.19 0 0 0 82.82 4ZM8.4 37.24h-.22a3.19 3.19 0 0 1-3.2-3.2v-7.28a3.19 3.19 0 0 1 3.2-3.18h.22v13.66ZM69.62 52.4H13.34v-44h56.28v44Zm8.78-17.86a4.15 4.15 0 1 1 0-8.29 4.15 4.15 0 0 1 0 8.3ZM54.65 0H31.5v2.76h23.15V0ZM46.6 64.86V61.9h8.05v-2.76H31.5v2.76h8.04v35.24a6.07 6.07 0 0 0-3.63 5.56V117h14.33v-14.3c0-2.5-1.5-4.63-3.63-5.56v-28h4.8l5.04 1.22v-6.71l-5.05 1.21h-4.8Z"
                     fill="#363636" />
@@ -361,7 +351,7 @@
             <a class="gadgets-link" href="#">
               <div class="gadgets-icon">
                 <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="108" height="66"
-                  fill="none">
+                  fill="none" role="img" aria-label="Фитнес браслеты.">
                   <path
                     d="M98.97 5.07a10.4 10.4 0 0 1 1.2 4.82V31c0 4.62-3.09 8.53-7.24 9.9-1.33 4-3.78 7.86-8.05 10.44-8.68 5.23-31.12 4.83-31.2 4.83-.08 0-22.51.4-31.19-4.83a18.73 18.73 0 0 1-8.04-10.28 10.5 10.5 0 0 1-7.76-10.06V9.9c0-1.68.43-3.28 1.14-4.69C4.17 6.1 0 7.92 0 11.43v29.99c0 10.25 11.84 24.43 53.66 24.43 41.82 0 53.65-14.18 53.65-24.43V11.43c0-3.68-4.57-5.49-8.34-6.36Z"
                     fill="#363636" />
@@ -377,7 +367,7 @@
             <a class="gadgets-link" href="#">
               <div class="gadgets-icon">
                 <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="57" height="98"
-                  fill="none">
+                  fill="none" role="img" aria-label="Умные часы.">
                   <path
                     d="M54.5 32.2h-1.52v-4.64a9.16 9.16 0 0 0-9.08-9.19H9.08c-5 0-9.08 4.13-9.08 9.19v42.86a9.16 9.16 0 0 0 9.08 9.19H43.9c5 0 9.08-4.13 9.08-9.19v-3.41h1.52c.41 0 .75-.34.75-.76V52.47a.76.76 0 0 0-.76-.77h-1.51v-8.79h1.52c.83 0 1.5-.68 1.5-1.53v-7.65c0-.84-.67-1.53-1.5-1.53Zm-20.42-3.11c2.93 0 5.3 2.4 5.3 5.36a5.33 5.33 0 0 1-5.3 5.35c-2.92 0-5.3-2.4-5.3-5.35a5.33 5.33 0 0 1 5.3-5.36Zm-15.13 0c2.92 0 5.3 2.4 5.3 5.36a5.33 5.33 0 0 1-5.3 5.35c-2.93 0-5.3-2.4-5.3-5.35a5.33 5.33 0 0 1 5.3-5.36ZM5.3 49.39a5.33 5.33 0 0 1 5.3-5.35c2.92 0 5.3 2.4 5.3 5.36a5.33 5.33 0 0 1-5.3 5.36c-2.93 0-5.3-2.4-5.3-5.36Zm13.64 19.5c-2.92 0-5.3-2.4-5.3-5.35a5.33 5.33 0 0 1 5.3-5.36c2.93 0 5.3 2.4 5.3 5.36a5.33 5.33 0 0 1-5.3 5.35Zm1.5-19.9a6.09 6.09 0 0 1 6.05-6.12 6.09 6.09 0 0 1 6.06 6.12 6.09 6.09 0 0 1-6.06 6.13 6.1 6.1 0 0 1-6.05-6.13Zm13.64 19.9c-2.92 0-5.3-2.4-5.3-5.35a5.33 5.33 0 0 1 5.3-5.36c2.93 0 5.3 2.4 5.3 5.36a5.33 5.33 0 0 1-5.3 5.35Zm8.3-14.13c-2.92 0-5.3-2.4-5.3-5.36a5.33 5.33 0 0 1 5.3-5.36c2.93 0 5.3 2.4 5.3 5.36a5.33 5.33 0 0 1-5.3 5.36ZM9.65 15.31h33.68c.85 0 1.44-.68 1.3-1.51l-1.6-10.77A3.68 3.68 0 0 0 39.5 0H13.47a3.68 3.68 0 0 0-3.51 3.03L8.34 13.8c-.12.83.46 1.51 1.3 1.51ZM43.33 82.67H9.65c-.85 0-1.43.68-1.3 1.52l1.6 10.76a3.68 3.68 0 0 0 3.52 3.03h26.04a3.68 3.68 0 0 0 3.51-3.02l1.62-10.77a1.28 1.28 0 0 0-1.3-1.52Z"
                     fill="#363636" />
@@ -390,7 +380,7 @@
             <a class="gadgets-link" href="#">
               <div class="gadgets-icon">
                 <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="133" height="70"
-                  fill="none">
+                  fill="none" role="img" aria-label="Квадрокоптеры.">
                   <path
                     d="M12.05.26C6.51.75 1.84 1.86.58 2.93c-.73.62-.73.62-.24 1.16C1 4.8 4.06 5.73 7.6 6.32c4 .67 12.51.7 13.72.05 1.22-.66 1.63-1.41 1.63-2.98 0-1.62-.62-2.41-2.22-2.85C19.27.15 14.94 0 12.05.26ZM25.77.49c-.12.28-.25 2.1-.25 4.11 0 4.06.15 3.78-2.2 3.93l-1.03.08-.25 5.09-1.2.28c-2.57.67-3.99 2.6-3.78 5.3.13 1.92 1.03 3.34 2.58 4.08 1.1.52 1.47.54 11.24.54 5.55 0 10.14.08 10.19.18.05.13-1.1 9.4-2.58 20.64-1.44 11.23-2.68 21-2.7 21.67C35.72 68 36.6 69 38.12 69c1.24 0 2.01-.64 2.32-1.9.13-.52 1.5-10.34 3.02-21.83a727.78 727.78 0 0 1 2.94-20.86c.1 0 1.08 1.4 2.2 3.13 2.93 4.63 2.4 4.32 7.63 4.32h4.36v5.63l-5.14.08c-4.72.07-5.2.12-5.88.61-1.57 1.16-1.62 1.42-1.62 10.98 0 9.53.02 9.79 1.52 11.05l.85.7H81.7l.85-.7c1.5-1.26 1.52-1.52 1.52-11.05 0-9.56-.05-9.82-1.63-10.98-.67-.49-1.16-.54-5.88-.61l-5.13-.08v-5.63h4.36c5.23 0 4.7.3 7.63-4.32a25.53 25.53 0 0 1 2.2-3.13c.07 0 1.42 9.4 2.94 20.86 1.52 11.5 2.89 21.31 3.01 21.83.31 1.26 1.09 1.9 2.33 1.9 1.52 0 2.4-1 2.34-2.62-.02-.67-1.26-10.44-2.7-21.67a903 903 0 0 1-2.58-20.64c.05-.1 4.64-.18 10.19-.18 9.77 0 10.13-.02 11.24-.54 1.55-.74 2.45-2.16 2.58-4.08a4.75 4.75 0 0 0-3.8-5.3L110 13.7l-.26-5.09-1.03-.08c-2.34-.15-2.2.13-2.2-3.93 0-2-.12-3.83-.25-4.11-.2-.36-.54-.49-1.37-.49-.61 0-1.23.13-1.42.3-.2.21-.3 1.47-.3 3.94 0 2.47-.1 3.73-.31 3.93-.18.18-.9.31-1.65.31-1.63 0-1.66.05-1.66 3.11v2.29H32.48v-2.29c0-3.06-.02-3.1-1.65-3.1-.75 0-1.47-.14-1.65-.32-.2-.2-.31-1.46-.31-3.93s-.1-3.73-.3-3.93C28.37.13 27.75 0 27.13 0c-.82 0-1.16.13-1.37.49ZM68.62 40.6c2.89.9 5.39 3.4 6.16 6.17.44 1.54.31 4.21-.28 5.78a10.23 10.23 0 0 1-4.57 4.94c-1.29.64-1.75.71-3.92.71-2.16 0-2.63-.07-3.92-.71a10.22 10.22 0 0 1-4.56-4.94c-.6-1.57-.73-4.24-.29-5.78a9.58 9.58 0 0 1 6.06-6.17 7.56 7.56 0 0 1 5.32 0Z"
                     fill="#363636" />
@@ -408,7 +398,7 @@
       <!-- info container -->
 
       <section class="info-list">
-        <h1 class="visually-hidden">Информационный Раздел</h1>
+        <h2 class="visually-hidden">Информационный Раздел</h2>
         <div class="delivery">
           <span class="delivery-title delivery" id="delivery-link">
             <a class="button-info-list current-button" href="#">Доставка</a>
@@ -416,19 +406,19 @@
             <a class="button-info-list " href="#">Кредит</a>
           </span>
           <article class="delivery-info">
-            <h2 class="delivery-info-title">Доставка</h2>
+            <h3 class="delivery-info-title">Доставка</h3>
             <p class="delivery-info-text">Мы с удовольствием доставим ваш товар прямо
               к&nbsp;вашему подъезду совершенно бесплатно! Ведь
               мы неплохо заработаем, поднимая его на ваш этаж.</p>
           </article>
           <article class="warranty-info">
-            <h2 class="delivery-info-title">Гарантия</h2>
+            <h3 class="delivery-info-title">Гарантия</h3>
             <p class="delivery-info-text">Если из-за возгорания купленного у нас товара у вас
               сгорит дом — не переживайте, мы выдадим вам новый.
               Товар, не дом, конечно же.</p>
           </article>
           <article class="credit-info">
-            <h2 class="delivery-info-title">Кредит</h2>
+            <h3 class="delivery-info-title">Кредит</h3>
             <p class="delivery-info-text">Залезть в долговую яму стало проще! Кредитные консультанты
               подберут для вас наиболее выгодные
               условия кредита. Выгодные для банка, разумеется.
@@ -444,7 +434,7 @@
         <a class="delivery-order" href="#popup-order">
           <div class="delivery-car-block">
             <svg class="delivery-car" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="47"
-              height="31" viewBox="0 0 47 31" fill="none">
+              height="31" viewBox="0 0 47 31" fill="none" role="img" aria-label="Доставка товара под заказ.">
               <g clip-path="url(#clip0_28346_24)">
                 <path
                   d="M46.7 15.4L40.2 7.2C39.9 6.8 39.5 6.6 39 6.6H30.7V1.5C30.7 0.7 30 0 29.2 0H1.5C0.7 0 0 0.7 0 1.5C0 2.3 0.7 3 1.5 3H27.7V24.7H15.8C15.2 22.8 13.4 21.4 11.3 21.4C8.7 21.4 6.5 23.6 6.5 26.2C6.5 28.8 8.7 31 11.3 31C13.4 31 15.2 29.6 15.8 27.7H29.2C30 27.7 30.7 27 30.7 26.2V9.6H38.3L44 16.9V24.8H41.8C41.2 22.9 39.4 21.5 37.3 21.5C34.7 21.5 32.5 23.7 32.5 26.3C32.5 28.9 34.6 31.1 37.3 31.1C39.4 31.1 41.2 29.7 41.8 27.8H45.5C46.3 27.8 47 27.1 47 26.3V16.4C47 16 46.9 15.7 46.7 15.4ZM11.3 28C10.3 28 9.5 27.2 9.5 26.2C9.5 25.2 10.3 24.4 11.3 24.4C12.3 24.4 13.1 25.2 13.1 26.2C13.1 27.2 12.2 28 11.3 28ZM37.4 28C36.4 28 35.6 27.2 35.6 26.2C35.6 25.2 36.4 24.4 37.4 24.4C38.4 24.4 39.2 25.2 39.2 26.2C39.2 27.2 38.3 28 37.4 28Z"
@@ -467,13 +457,12 @@
           <div class="conteiner-i">
             <div class="icon-i">
               <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="4" height="12"
-                viewBox="0 0 4 12" fill="none">
+                viewBox="0 0 4 12" fill="none" role="img" aria-label="Тултип.">
                 <path d="M3 0H1V2H3V0Z" fill="black" />
                 <path d="M3 4H1V12H3V4Z" fill="black" />
               </svg>
             </div>
           </div>
-
         </a>
       </section>
 
@@ -524,8 +513,9 @@
       <!-- subscribe container -->
 
       <section class="subscribe-container">
+        <h2 class="visually-hidden">Подписка на рассылку</h2>
         <div class="subscribe">
-          <h1 class="subscribe-title">Подпишитесь на рассылку</h1>
+          <h3 class="subscribe-title">Подпишитесь на рассылку</h3>
           <p class="subscribe-text">
             Еженедельный дайджест с обзорами новинок, <br>
             длительными тест-драйвами, распаковками, а также акции,
@@ -533,6 +523,7 @@
           </p>
 
           <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
+            <label class="visually-hidden" for="subscribe-email">Email</label>
             <input class="field subscribe-form" placeholder="Ваш e-mail" type="email" name="subscribe-email"
               id="subscribe-email" required>
             <button class="newsletter-button" type="submit">
@@ -552,7 +543,7 @@
           <h2 class="visually-hidden">Меню подвала</h2>
           <a class="logo-footer" href="#">
             <svg aria-hidden="true" focusable="false" width="145" height="36" viewBox="0 0 145 36" fill="currentColor"
-              xmlns="http://www.w3.org/2000/svg">
+              xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Девайс.">
               <path
                 d="M27.22 0v35.3h-7.6v-2.4c-1.7 1.9-4.1 3.1-7.51 3.1C5.5 36 0 30.2 0 22.7 0 15.2 5.5 9.4 12.1 9.4c3.41 0 5.91 1.2 7.51 3.1V0h7.6Zm-7.6 22.7c0-3.8-2.5-6.2-6.01-6.2-3.5 0-6 2.4-6 6.2 0 3.8 2.5 6.2 6 6.2 3.5-.1 6-2.4 6-6.2ZM43.73 29.2c2.1 0 3.8-.8 4.8-1.9l6.1 3.5c-2.5 3.4-6.2 5.2-11 5.2-8.6 0-14.01-5.8-14.01-13.3 0-7.5 5.4-13.3 13.4-13.3 7.41 0 12.82 5.7 12.82 13.3 0 1.1-.1 2.1-.3 3H37.63c1 2.6 3.3 3.5 6.1 3.5Zm4.6-9.1c-.8-2.9-3.1-4-5.4-4-2.9 0-4.8 1.4-5.5 4h10.9ZM82.16 10.1l-9.31 25.2h-8.6l-9.31-25.2h8.4l5.3 16 5.31-16h8.2ZM83.46 10.1h7.6v25.2h-7.6V10.1ZM93.67 22.7c0-7.5 5.7-13.3 13.4-13.3 4.9 0 9.21 2.6 11.41 6.5l-6.6 3.8c-.9-1.8-2.7-2.8-4.9-2.8-3.3 0-5.71 2.4-5.71 5.8 0 3.5 2.4 5.8 5.7 5.8 2.2 0 4.1-1.1 4.9-2.8l6.61 3.8c-2.1 3.9-6.4 6.5-11.4 6.5-7.71 0-13.41-5.8-13.41-13.3ZM132.9 29.2c2.1 0 3.8-.8 4.8-1.9l6.1 3.5c-2.5 3.4-6.2 5.2-11 5.2-8.61 0-14.02-5.8-14.02-13.3 0-7.5 5.5-13.3 13.41-13.3 7.4 0 12.81 5.7 12.81 13.3 0 1.1-.1 2.1-.3 3h-17.91c1 2.6 3.3 3.5 6.1 3.5Zm4.7-9.1c-.8-2.9-3.1-4-5.4-4-2.91 0-4.81 1.4-5.51 4h10.9ZM83.46 0v10.1L91.06 0h-7.6Z"
                 fill="currentColor" />
@@ -586,9 +577,9 @@
             <h2 class="visually-hidden">Социльные сети</h2>
             <ul class="footer-social-list">
               <li class="footer-social-item">
-                <a class="buttom-social" href="https://t.me/htmlacademy">
+                <a class="buttom-social" href="https://t.me/htmlacademy" target="_blank">
                   <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="40" height="40"
-                    viewBox="0 0 40 40" fill="none">
+                    viewBox="0 0 40 40" fill="none" role="img" aria-label="Телеграм канал.">
                     <circle cx="20" cy="20" r="20" fill="white" fill-opacity="0.3" />
                     <g clip-path="url(#clip0_28192_1309)">
                       <path
@@ -604,9 +595,9 @@
                 </a>
               </li>
               <li class="footer-social-item">
-                <a class="buttom-social" href="https://www.youtube.com/user/htmlacademyru">
+                <a class="buttom-social" href="https://www.youtube.com/user/htmlacademyru" target="_blank">
                   <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="40" height="40"
-                    viewBox="0 0 40 40" fill="none">
+                    viewBox="0 0 40 40" fill="none" role="img" aria-label="Youtube канал.">
                     <circle cx="20" cy="20" r="20" fill="white" fill-opacity="0.3" />
                     <g clip-path="url(#clip0_28192_1314)">
                       <path
@@ -622,9 +613,9 @@
                 </a>
               </li>
               <li class="footer-social-item">
-                <a class="buttom-social" href="https://twitter.com/htmlacademy_ru">
+                <a class="buttom-social" href="https://twitter.com/htmlacademy_ru" target="_blank">
                   <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="40" height="40"
-                    viewBox="0 0 40 40" fill="none">
+                    viewBox="0 0 40 40" fill="none" role="img" aria-label="Твиттер.">
                     <circle cx="20" cy="20" r="20" fill="white" fill-opacity="0.3" />
                     <path
                       d="M22.7 13.1551C24.2 12.6551 25.3 13.4551 25.9 14.2551C26.4 14.0551 27 13.8551 27.6 13.6551C27.6 14.4551 27.1 15.0551 26.8 15.2551C27.5 15.4551 28 14.8551 28 14.8551C27.9 15.7551 27.1 16.5551 26.6 16.7551C26.4 23.0551 23.8 27.1551 17.7 27.0551C17.2 27.0551 17.8 27.0551 17.3 27.0551C17 27.0551 13.6 26.6551 13 25.2551C15 25.4551 16.4 24.8551 17.1 24.1551C16.3 23.8551 14.7 23.7551 14.5 21.3551C14.8 21.5551 15 21.6551 15.6 21.5551C14.5 20.7551 13.3 20.0551 13.4 18.0551C13.7 18.3551 14.3 18.5551 14.6 18.4551C14 18.2551 12.8 15.3551 13.8 13.8551C15.4 15.5551 17.1 17.2551 20.1 17.3551C20.3 15.2551 21.1 13.8551 22.7 13.1551Z"
@@ -641,7 +632,8 @@
             <a class="contacts-phone-footer" href="tel:+78128121212">Тел.: +7 (812) 812-12-12</a>
           </address>
           <a class="htmlacademy-link" href="https://htmlacademy.ru/" target="_blank">
-            <svg width="115" height="33" viewBox="0 0 115 33" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <svg width="115" height="33" viewBox="0 0 115 33" fill="currentColor" xmlns="http://www.w3.org/2000/svg"
+              role="img" aria-label="Сайт htmlacademy.">
               <path
                 d="M0 12.9v2.6h2.5v-2.6H0ZM11.6 4.5c-1.6 0-2.8.7-3.6 1.7h-.1V0h-2v15.5h2v-5.3c0-2.1 1.3-3.6 3.3-3.6 1.8 0 2.9 1.4 2.9 3.2v5.7h2V9.4c.1-3-1.8-4.9-4.5-4.9ZM26.6 4.8h-4.8V1.1h-2v3.8h-1.9v2h1.9v6c0 1.7 1 2.7 2.7 2.7h4.1v-2h-3.7c-.7 0-1.1-.4-1.1-1.1V6.8h4.8v-2ZM41.1 4.6c-1.6 0-2.9.8-3.5 2.1h-.1c-.6-1.2-1.8-2.1-3.4-2.1-1.4 0-2.5.8-3.1 1.8h-.1V4.8H29v10.6h2V10c0-2 1-3.5 2.6-3.5 1.5 0 2.4 1 2.4 2.6v6.3h2V9.8c0-2.4 1.4-3.3 2.6-3.3 1.5 0 2.4 1 2.4 2.6v6.3h2V8.9c.1-2.5-1.4-4.3-3.9-4.3ZM47.8 12.7c0 1.7 1 2.7 2.8 2.7h2v-2h-1.7c-.7 0-1.1-.4-1.1-1.1V0h-2v12.7ZM28.9 19.7c-.9-1.1-2.2-1.8-3.9-1.8-3.1 0-5.4 2.3-5.4 5.6s2.3 5.6 5.4 5.6c1.8 0 3-.8 3.8-1.9h.1v1.6h2V18.2h-2v1.5Zm-3.6 7.4c-2.2 0-3.6-1.6-3.6-3.6s1.4-3.6 3.6-3.6 3.6 1.6 3.6 3.6c0 1.9-1.4 3.6-3.6 3.6ZM44.2 22c-.5-2.4-2.6-4.1-5.4-4.1a5.4 5.4 0 0 0-5.6 5.6c0 3.1 2.2 5.6 5.6 5.6 2.8 0 4.9-1.8 5.4-4.2h-2.1a3.4 3.4 0 0 1-3.3 2.3c-2.2 0-3.6-1.6-3.6-3.6s1.4-3.6 3.6-3.6c1.6 0 2.8 1 3.3 2.2h2.1V22ZM55.1 19.7c-.9-1.1-2.2-1.8-3.9-1.8-3.1 0-5.4 2.3-5.4 5.6s2.3 5.6 5.4 5.6c1.8 0 3-.8 3.8-1.9h.1v1.6h2V18.2h-2v1.5Zm-3.6 7.4c-2.2 0-3.6-1.6-3.6-3.6s1.4-3.6 3.6-3.6 3.6 1.6 3.6 3.6c0 1.9-1.5 3.6-3.6 3.6ZM68.7 19.8c-.9-1.1-2.2-1.9-3.9-1.9-3.1 0-5.4 2.3-5.4 5.6s2.2 5.6 5.4 5.6c1.7 0 3-.8 3.8-1.8h.1v1.5h2V13.4h-2v6.4Zm-3.6 7.3c-2.2 0-3.6-1.6-3.6-3.6s1.4-3.6 3.6-3.6 3.6 1.6 3.6 3.6c-.1 2-1.5 3.6-3.6 3.6ZM78.3 17.9c-3.3 0-5.5 2.5-5.5 5.6 0 3 2.1 5.6 5.5 5.6 2.5 0 4.5-1.3 5.2-3.6h-2.1c-.5 1-1.6 1.6-3 1.6-1.9 0-3.3-1.3-3.4-2.9h8.8c.2-3.6-2-6.3-5.5-6.3Zm0 1.9c1.7 0 3 1 3.3 2.6h-6.5c.3-1.5 1.5-2.6 3.2-2.6ZM98.2 17.9c-1.6 0-2.9.8-3.6 2h-.1c-.6-1.2-1.8-2-3.4-2-1.4 0-2.5.7-3.1 1.8v-1.5h-1.9v10.6h2v-5.4c0-2 1-3.4 2.6-3.5 1.5 0 2.4 1 2.4 2.6v6.3h2v-5.6c0-2.4 1.4-3.3 2.6-3.3 1.5 0 2.4 1 2.4 2.6v6.3h2v-6.5c.1-2.6-1.4-4.4-3.9-4.4ZM109.4 27l-3.6-8.9h-2.2l4.8 11.6c-.3.9-.7 1.2-1.7 1.2h-2.5v2h2.5c1.8 0 2.8-.8 3.5-2.6l4.7-12.2h-2.1l-3.4 8.9Z"
                 fill="currentColore" />
@@ -651,22 +643,23 @@
       </div>
     </footer>
 
-    <div class="modal-container"> <!--Для аквтивации сменить в css display: none на display: flex -->
+    <div class="modal-container">
+      <!--Для аквтивации сменить в css display: none на display: flex -->
       <div class="modal delivery-buy">
-        <button class="modal-close-button">
+        <button class="modal-close-button" type="button">
           <span class="visually-hidden">Закрыть</span>
         </button>
         <section class="modal-content">
           <h2 class="modal-title">Доставка под заказ</h2>
           <form class="form-order-style">
             <p class="form-group name">
-              <label class="title-form">Ваше имя:</label>
-              <input class="field name" type="text" placeholder="Введите имя">
+              <label class="title-form" for="name-user">Ваше имя:</label>
+              <input class="field name" id="name-user" type="text" placeholder="Введите имя" name="name-user">
               <span class="modal-subtitle">Добавьте имя</span>
             </p>
             <p class="form-group email">
-              <label class="title-form">Ваш e-mail:</label>
-              <input class="field email" type="email" placeholder="Ваш email">
+              <label class="title-form" for="modal-email">Ваш e-mail</label>
+              <input class="field email" id="modal-email" type="email" placeholder="Введите e-mail" name="modal-email">
               <span class="modal-subtitle error">Забавный у вас адрес</span>
             </p>
             <p class="form-group description">
@@ -679,7 +672,7 @@
                 <span class="modal-tooltip">
                   <button class="tooltip-toggle" type="button" aria-labelledby="tooltip-label-date">
                     <svg class="tooltip-icon" width="26" height="26" viewBox="0 0 26 26" fill="none"
-                      xmlns="http://www.w3.org/2000/svg">
+                      xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Тултип.">
                       <circle cx="13" cy="13" r="13" fill="#FFE17F" />
                       <path d="M14 7h-2v2h2V7ZM14 11h-2v8h2v-8Z" fill="#000" />
                     </svg>
@@ -701,10 +694,7 @@
             <button class="button" type="submit">Отправить</button>
           </form>
         </section>
-
       </div>
-
     </div>
   </body>
-
 </html>
