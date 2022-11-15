@@ -2047,7 +2047,6 @@ body {
 .field.number-text::-webkit-inner-spin-button,
 .field.number-text::-webkit-outer-spin-button {
   display: none;
-  -moz-appearance:textfield;
 }
 
 .button-number {
@@ -2741,9 +2740,11 @@ body {
 
 .pagination {
   display: flex;
+  flex-wrap: wrap;
   width: 760px;
   margin: 0;
   margin-left: 40px;
+  margin-right: 40px;
   padding: 0;
   list-style-type: none;
   background-color: #ebebeb;
@@ -2752,12 +2753,12 @@ body {
 .pagination-button {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   font-size: 18px;
   line-height: 21px;
   font-weight: 800;
   letter-spacing: 0.2em;
   padding: 25px;
-  margin-right: 145px;
   text-transform: uppercase;
   text-decoration: none;
   color: #000000;
@@ -2767,8 +2768,13 @@ body {
   opacity: 0.3;
 }
 
+.pagination-button.pagination-prev {
+  margin-right: 145px;
+}
+
 .pagination-button.pagination-next {
-  margin-left: 145px;
+  margin-left: 142px;
+  padding-right: 22px;
 }
 
 .pagination-button:hover {
